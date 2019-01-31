@@ -1,8 +1,15 @@
-function takeANumber(n, name) {
-  n.push(name);
-  var num = n.length;
-  return `Welcome, ${name}. You are number ${num} in line.`;
+var ticketNum = 0
+
+function takeANumber(array) {
+  
+  ticketNum = ticketNum + 1
+  return `Welcome, ${ticketNum}. You are ${lineNum} in line.`
+  
 }
+//  n.push(name);
+//  var num = n.length;
+//  return `Welcome, ${name}. You are number ${num} in line.`;
+
 
 function nowServing(line) {
   if (line.length === 0) {
